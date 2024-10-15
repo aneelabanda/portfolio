@@ -1,0 +1,280 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #E7F5F5; /* Light grey */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #262341; /* Dark grey */
+    padding: 20px 40px; /* Padding for left and right */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    color: #B9E0D9; /* Pastel mint green for the header */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #B9E0D9; /* Text color */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #B9E0D9; /* Pastel mint green on hover */
+}
+
+/* Header Styling */
+header {
+    height: 100vh;
+    background-color: #B9E0D9; /* Pastel mint green */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #262341; /* Dark grey */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 20px; /* Additional padding for spacious feel */
+    border-radius: 10px; /* Slightly rounded corners for aesthetics */
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    color: #262341; /* Dark grey for text */
+}
+
+.about-text h3 {
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.tagline {
+    font-style: italic; /* Italic style for emphasis */
+    color: #B9E0D9; /* Pastel mint green for tagline */
+    margin-top: 10px; /* Space above tagline */
+}
+
+.skills-column {
+    flex-basis: 300px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #B9E0D9; /* Pastel mint green for skills */
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #D4C3E2; /* Pastel lavender on hover */
+}
+
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    color: #262341; /* Dark grey for text */
+}
+
+.skills-column {
+    flex-basis: 300px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #B9E0D9; /* Pastel mint green for skills */
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #666; /* Pastel lavender on hover */
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #262341; /* Dark grey */
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.card p, .card ul {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-info {
+    font-size: 1.1rem;
+    color: #262341; /* Dark grey for text */
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #B9E0D9; /* Pastel mint green for icons */
+}
+
+/* Optional: Adjust icon sizes */
+.contact-info i {
+    font-size: 1.2rem; /* Adjust the icon size if needed */
+}
+
+/* Footer */
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262341; /* Dark grey */
+    color: #E7F5F5; /* Light pastel blue */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-left {
+    padding-left: 20px;
+}
+
+.footer-right {
+    padding-right: 20px;
+}
+
+.footer-right a {
+    color: #E7F5F5; /* Light pastel blue for icons */
+    margin-left: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #B9E0D9; /* Pastel mint green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-column {
+        margin-top: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
