@@ -33,7 +33,16 @@ body {
     font-size: 1.8rem;
     color: #B9E0D9; /* Pastel mint green for the header */
 }
-
+.navbar h1 a {
+    text-decoration: none;
+    color: #B9E0D9; /* Text color */
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.navbar h1 a:hover {
+    color: #D4C3E2; /* Pastel mint green on hover */
+}
 .navbar ul {
     list-style: none;
     display: flex;
@@ -49,7 +58,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #B9E0D9; /* Pastel mint green on hover */
+    color: #D4C3E2; /* Pastel mint green on hover */
 }
 
 /* Header Styling */
@@ -126,34 +135,6 @@ header p {
 }
 
 
-.about-text {
-    flex: 1;
-    max-width: 600px;
-    color: #262341; /* Dark grey for text */
-}
-
-.skills-column {
-    flex-basis: 300px;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill {
-    background-color: #B9E0D9; /* Pastel mint green for skills */
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-}
-
-.skill:hover {
-    background-color: #666; /* Pastel lavender on hover */
-}
 
 /* Section Styling */
 .section {
@@ -206,27 +187,64 @@ h3 {
     color: #666;
 }
 
-/* Contact Section */
-.contact-info {
-    font-size: 1.1rem;
-    color: #262341; /* Dark grey for text */
+/* Contact Section Styling */
+.contact-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.contact-info p {
-    margin-bottom: 10px;
+.contact-card {
+    background-color: #F7F7F7; /* Light grey background */
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
 }
 
-.contact-info i {
-    margin-right: 10px; /* Space between icon and text */
-    color: #B9E0D9; /* Pastel mint green for icons */
+.contact-card i {
+    font-size: 2.5rem;
+    color: #B9E0D9; /* Pastel mint green icon color */
+    margin-bottom: 1rem;
 }
 
-/* Optional: Adjust icon sizes */
-.contact-info i {
-    font-size: 1.2rem; /* Adjust the icon size if needed */
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
-/* Footer */
+.contact-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    background-color: #B9E0D9; /* Change background on hover */
+}
+
+.contact-card:hover a {
+    color: #fff;
+}
+
+.contact-card:hover i {
+    color: #fff; /* Icon color changes to white on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-card {
+        width: 100%;
+    }
+}
+
 /* Footer */
 footer {
     display: flex;

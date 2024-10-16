@@ -8,3 +8,12 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         });
     });
 });
+
+    const toggleButton = document.querySelector('.nav-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+
+ 
