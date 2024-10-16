@@ -238,6 +238,7 @@ h3 {
     color: #fff; /* Icon color changes to white on hover */
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-card {
