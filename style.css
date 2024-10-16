@@ -253,8 +253,14 @@ h3 {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 }
+.card h4 {
+    margin-bottom: 0.75rem;
+    color: #a4c6c0;
+}
 
 .card p, .card ul {
+   
+    text-align:inherit;
     font-size: 1rem;
     color: #666;
 }
