@@ -61,6 +61,48 @@ body {
     color: #D4C3E2; /* Pastel mint green on hover */
 }
 
+.hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+}
+/* Responsive Design for Navigation */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    #nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #262341;
+        padding: 20px;
+        position: absolute;
+        top: 80px; /* Adjust based on the height of the navbar */
+        left: 0;
+        z-index: 999;
+    }
+
+    #nav-links.active {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu in mobile */
+        color: #B9E0D9;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+
+/* Default for larger screens */
+
+
 /* Header Styling */
 header {
     height: 100vh;
