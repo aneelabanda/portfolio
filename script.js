@@ -9,11 +9,12 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
-    const toggleButton = document.querySelector('.nav-toggle');
-    const navbar = document.querySelector('.navbar');
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-    toggleButton.addEventListener('click', () => {
-        navbar.classList.toggle('active');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Toggle the active class
     });
+});
 
- 

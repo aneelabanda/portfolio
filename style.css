@@ -31,17 +31,17 @@ body {
 
 .navbar h1 {
     font-size: 1.8rem;
-    color: #B9E0D9; /* Pastel mint green for the header */
+    color: #E7F5F5; /* Pastel mint green for the header */
 }
 .navbar h1 a {
     text-decoration: none;
-    color: #B9E0D9; /* Text color */
+    color: #E7F5F5; /* Text color */
     font-size: 1.8rem;
     cursor: pointer;
     transition: color 0.3s;
 }
 .navbar h1 a:hover {
-    color: #D4C3E2; /* Pastel mint green on hover */
+    color: #B9E0D9; /* Pastel mint green on hover */
 }
 .navbar ul {
     list-style: none;
@@ -51,14 +51,14 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #B9E0D9; /* Text color */
+    color: #E7F5F5; /* Text color */
     font-size: 1.2rem;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #D4C3E2; /* Pastel mint green on hover */
+    color: #B9E0D9; /* Pastel mint green on hover */
 }
 
 .hamburger {
@@ -126,25 +126,37 @@ header p {
 }
 
 /* About Section */
+/* About Section */
+.section {
+    padding: 60px 20px; /* Adjust for better spacing */
+    text-align: center; /* Center the section title */
+}
+
+/* Adjust padding and alignment for about container */
 .about-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 30px 20px; /* Additional padding for spacious feel */
+    padding: 30px; /* Keep this for top/bottom spacing */
     border-radius: 10px; /* Slightly rounded corners for aesthetics */
+    max-width: 1200px; /* Set a max-width for centering */
+    margin: 0 auto; /* Center the container */
 }
 
 .about-text {
     flex: 1;
-    max-width: 600px;
+    max-width: 800px;
     color: #262341; /* Dark grey for text */
+    text-align:justify; /* Keep text left aligned */
+    padding: 0 20px; /* Optional padding for text */
+    align-self: center; /* Center the text vertically in the container */
 }
 
-.about-text h3 {
-    font-size: 1.5rem; /* Heading size */
-    margin-bottom: 10px; /* Space below heading */
+.skills-column {
+    flex-basis: 300px;
+    align-self: flex-start; /* Aligns the skills column to the top */
 }
 
 .tagline {
@@ -152,28 +164,46 @@ header p {
     color: #B9E0D9; /* Pastel mint green for tagline */
     margin-top: 10px; /* Space above tagline */
 }
-
-.skills-column {
-    flex-basis: 300px;
-}
+/* Skills column styling */
+/* .skills-column {
+    flex-basis: 300px; /* Set a base width for skills column */
+    /* padding: 20px; /* Space inside the skills container */
+/* } */ 
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px; /* Spacing between skills */
+    justify-content: center; /* Center align skills */
 }
 
 .skill {
     background-color: #B9E0D9; /* Pastel mint green for skills */
     color: #333;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .skills-column {
+        margin-top: 20px; /* Space between text and skills */
+        text-align: center; /* Center text in skills column */
+    }
+}
+
+
+
 .skill:hover {
-    background-color: #D4C3E2; /* Pastel lavender on hover */
+    transform: translateZ(-20px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2) /* Pastel lavender on hover */
 }
 
 
@@ -332,6 +362,7 @@ footer {
     .card-container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 }
 
