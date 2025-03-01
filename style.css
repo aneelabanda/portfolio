@@ -1,4 +1,4 @@
-/* General resets */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +21,33 @@ body {
     width: 100%;
     z-index: 1000;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Smooth transition for navbar */
+}
+/* Navbar Shrinking Effect */
+.navbar.shrink {
+    padding: 10px 30px;
+    background-color: rgba(38, 35, 65, 0.9);
+}
+
+/* Animated Underline Effect on Hover */
+.navbar ul li a {
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #B9E0D9;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
 }
 
 .navbar .container {
@@ -207,6 +234,48 @@ header p {
 }
 
 
+/* Hero Section with Parallax Background */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #B9E0D9 30%, #262341);
+    animation: gradientAnimation 10s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero .highlight {
+    color: #B9E0D9;
+    font-weight: bold;
+}
 
 /* Section Styling */
 .section {
