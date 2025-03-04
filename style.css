@@ -7,14 +7,19 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
     line-height: 1.6;
-    background-color: #E7F5F5; /* Light grey */
+    /* color: #333;
+    background-color: #E7F5F5; Light grey */
+    color: #334155; /* Dark Blue-Gray */
+    background-color: #F5F5F5; /* Off-White */
+
+
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #262341; /* Dark grey */
+    /* background-color: #262341; Dark grey */
+    background-color: #1E293B; /* Deep Blue-Gray */
     padding: 20px 40px; /* Padding for left and right */
     position: sticky;
     top: 0;
@@ -32,6 +37,7 @@ body {
 /* Animated Underline Effect on Hover */
 .navbar ul li a {
     position: relative;
+    color: #F5F5F5; /* Off-White */
 }
 
 .navbar ul li a::after {
@@ -48,6 +54,7 @@ body {
 
 .navbar ul li a:hover::after {
     width: 100%;
+    color: #2563EB; /* Bold Blue */
 }
 
 .navbar .container {
@@ -133,7 +140,8 @@ body {
 /* Header Styling */
 header {
     height: 100vh;
-    background-color: #B9E0D9; /* Pastel mint green */
+    /* background-color: #B9E0D9; Pastel mint green */
+    background-color: #F5F5F5; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,12 +152,14 @@ header {
 header h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #262341; /* Dark grey */
+    /* color: #262341; Dark grey */
+    color: #1E293B; /* Deep Blue-Gray */
 }
 
 header p {
     font-size: 1.2rem;
-    color: #333;
+    /* color: #333; */
+    color: #334155; /* Dark Blue-Gray */
 }
 
 /* About Section */
@@ -286,9 +296,13 @@ header p {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #262341; /* Dark grey */
+    /* color: #262341; Dark grey */
+    color: #1E293B; /* Deep Blue-Gray */
 }
 
+p {
+    color: #334155; /* Dark Blue-Gray */
+}
 h3 {
     font-size: 1.75rem;
     margin-bottom: 0.75rem;
@@ -398,10 +412,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #262341; /* Dark grey */
-    color: #E7F5F5; /* Light pastel blue */
+    /* background-color: #262341; /* Dark grey */
+    /* color: #E7F5F5; Light pastel blue */ 
     padding: 20px;
     margin-top: 40px;
+    background-color: #1E293B; /* Deep Blue-Gray */
+    color: white; /* Off-White */
 }
 
 .footer-left {
@@ -420,7 +436,8 @@ footer {
 }
 
 .footer-right a:hover {
-    color: #B9E0D9; /* Pastel mint green on hover */
+    color: #B9E0D9; /*  Pastel mint green on hover */
+    /* color: #2563EB; Bold Blue */
 }
 
 /* Responsive Design */
@@ -444,4 +461,13 @@ footer {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+button, .btn {
+    background-color: #2563EB; /* Bold Blue */
+    color: #F5F5F5;
+    transition: background-color 0.3s ease;
+}
+button:hover, .btn:hover {
+    background-color: #1E40AF; /* Darker Blue */
 }
